@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدخال بيانات الاختبار</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إدخال بيانات الاختبار</h1>
+        <label for="question">السؤال:</label>
+        <input type="text" id="question" required><br>
+
+        <label for="category">الفئة:</label>
+        <input type="text" id="category" required><br>
+
+        <label for="correctAnswer">الإجابة الصحيحة:</label>
+        <input type="text" id="correctAnswer" required><br>
+
+        <label for="incorrectAnswers">الإجابات الخاطئة (مفصولة بفواصل):</label>
+        <input type="text" id="incorrectAnswers" required><br>
+
+        <label for="type">النوع:</label>
+        <input type="text" id="type" required><br>
+
+        <label for="difficulty">الصعوبة:</label>
+        <select id="difficulty" required>
+            <option value="سهل">سهل</option>
+            <option value="متوسط">متوسط</option>
+            <option value="صعب">صعب</option>
+        </select><br>
+
+        <button onclick="submitData()">إرسال</button>
+    </div>
+
+    <script src="scipt.js"></script>
+</body>
+</html>
